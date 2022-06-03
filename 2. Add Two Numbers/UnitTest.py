@@ -29,5 +29,6 @@ class TestAddTwoNumbers(unittest.TestCase):
             self.assertEqual(expected.val, actual.val)
             expected = expected.next
             actual = actual.next
+
 if __name__ == "__main__":
     unittest.main()
