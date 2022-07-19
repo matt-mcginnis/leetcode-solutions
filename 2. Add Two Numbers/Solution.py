@@ -26,7 +26,8 @@ class Solution:
             if l2:
                 carry_over += l2.val
                 l2 = l2.next
-            curr_node.next = ListNode(carry_over % 10)
-            curr_node = curr_node.next
-            carry_over = carry_over // 10
+            if curr_node:
+                curr_node.next = ListNode(carry_over % 10)
+                curr_node = curr_node.next
+                carry_over = carry_over // 10
         return dummy.next

@@ -15,6 +15,7 @@ class Solution:
             if l2:
                 curr_val += l2.val
                 l2 = l2.next
-            curr_node.next = ListNode(curr_val)
-            curr_node = curr_node.next
+            if curr_node:
+                curr_node.next = ListNode(curr_val)
+                curr_node = curr_node.next
         return dummy.next

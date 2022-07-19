@@ -17,3 +17,5 @@ class Solution:
                 return [diff_dict[diff], i]
             else:
                 diff_dict[num] = i
+
+        return []
