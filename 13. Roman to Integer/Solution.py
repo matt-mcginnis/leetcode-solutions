@@ -14,12 +14,3 @@ class Solution:
             prev_char = c
         
         return ret
-
-def main():
-    sol = Solution()
-    print(sol.romanToInt('III'))
-    print(sol.romanToInt('LVIII'))
-    print(sol.romanToInt('MCMXCIV'))
-
-if __name__ == "__main__":
-    main()
